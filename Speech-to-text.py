@@ -16,9 +16,9 @@ from tqdm import tqdm
 
 
 # Load all audio files (divided in previous step)
-files = sorted(os.listdir('C:\\Users\\MWars\\Desktop\\Untitled Folder\\parts\\'))
+files = sorted(os.listdir('\\parts\\'))
 
-with open("C:\\Users\\MWars\\Desktop\\Untitled Folder\\api.json") as f:
+with open("\\api.json") as f:
     GOOGLE_CLOUD_SPEECH_CREDENTIALS = f.read()
 
 
@@ -30,7 +30,7 @@ i = 0
 
 for f in tqdm(files):
     # Load audio files part by part
-    name = 'C:\\Users\\MWars\\Desktop\\Untitled Folder\\parts\\' + f 
+    name = '\\parts\\' + f 
     
     with sr.AudioFile(name) as source:
         audio = r.record(source)
@@ -45,7 +45,7 @@ for f in tqdm(files):
     i = i + 1
     if i%5 == 0: 
         print(name,"- current saved")
-        with open("C:\\Users\\MWars\\Desktop\\Untitled Folder\\txt.txt", "w") as f:
+        with open("\\txt.txt", "w") as f:
                 f.write(str(all_text))
                 
 
