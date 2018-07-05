@@ -1,4 +1,4 @@
-# Speech-to-Text
+# Speech-to-Text using Python and GCP
 Quick tutorial how to convert speech (.wav file) to text using Google API
 
 
