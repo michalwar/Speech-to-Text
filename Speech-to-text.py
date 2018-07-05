@@ -7,7 +7,6 @@
 import speech_recognition as sr
 import numpy as np
 import os
-import os
 import speech_recognition as sr
 from tqdm import tqdm
 
